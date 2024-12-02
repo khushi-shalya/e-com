@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-----flaticon----->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-----swiper css----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-----css----->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__container container">
+                <div class="header__contact">
+                    <span>+91 123456789</span>
+                    <span>Our location: Sector-55, Gurugram</span>
+                </div>
+                <p class="header__alert-news">
+                    Super Value Deals - Save more with coupons
+                </p>
+
+                <a href="login-register.html" class="header__top-action">
+                    Login/Sign Up
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/LOGO.png" alt="" class="nav__logo-img">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-top">
+                    <a href="index.html" class="nav__menu-logo">
+                        <img src="img/LOGO.png" alt="">
+                    </a>
+                    <div class="nav__close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="account.html" class="nav__link">My Account</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="compare.html" class="nav__link">Compare</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link  active-link">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="header__search">
+                    <input type="text" placeholder="Search for items..." class="form__input">
+                    <button class="search__btn">
+                        <img src="img/search.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__user-actions">
+                <a href="wishlist.html" class="header__action-btn">
+                    <img src="img/icon-heart.svg" alt="">
+                    <span class="count">0</span>
+                </a>
+                <a href="cart.html" class="header__action-btn">
+                    <img src="img/icon-cart.svg" alt="">
+                    <span class="count" id="cartCount">0</span>
+                </a>
+                <div class="header__action-btn nav__toggle" id="nav-toggle">
+                    <img src="img/menu-burger.svg" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-----Breadcrumb--->
+        <section class="breadcrumb">
+            <ul class="breadcrumb__list flex container">
+                <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><span class="breadcrumb__link">Fashion Blogs</span></li>
+            </ul>
+        </section>
+
+        <!----Blog---->
+        <section id="blog">
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b1.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>The Zoe Report</h4>
+                    <p>Founded by Rachel Zoe in 2009, The Zoe Report delivers the need-to-know in fashion, beauty, lifestyle, and everything in between.</p>
+                    <a href="https://www.thezoereport.com/">CONTINUE READING</a>
+                </div>
+                <h1>1</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b2.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Elle</h4>
+                    <p>Featuring beauty tips, fashion news, and celebrity trends.</p>
+                    <a href="https://www.elle.com/">CONTINUE READING</a>
+                </div>
+                <h1>2</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b3.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Business of Fashion</h4>
+                    <p>News and analysis from within the fashion industry.</p>
+                    <a href="https://www.businessoffashion.com/">CONTINUE READING</a>
+                </div>
+                <h1>3</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b4.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>College Fashion</h4>
+                    <p>Trends, tips and styles for students.</p>
+                    <a href="https://www.collegefashion.net/">CONTINUE READING</a>
+                </div>
+                <h1>4</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b5.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Put This On</h4>
+                    <p>A blog all about dressing like a grownup.</p>
+                    <a href="https://putthison.com/">CONTINUE READING</a>
+                </div>
+                <h1>5</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b6.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>10 Magazine</h4>
+                    <p>Highlights of shows, first looks and celebrity styles.</p>
+                    <a href="https://10magazine.com/">CONTINUE READING</a>
+                </div>
+                <h1>6</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b7.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>MODELS</h4>
+                    <p>Models.com features up and coming models and discusses fashion events.</p>
+                    <a href="https://models.com/">CONTINUE READING</a>
+                </div>
+                <h1>7</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b8.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Popsugar Fasion</h4>
+                    <p>Insights into celebrity styling and inspiration fashion tips.</p>
+                    <a href="https://www.popsugar.com/fashion/">CONTINUE READING</a>
+                </div>
+                <h1>8</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b9.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>The Chriselle Factor</h4>
+                    <p>A beauty, fashion, and lifestyle blog.</p>
+                    <a href="https://thechrisellefactor.com/">CONTINUE READING</a>
+                </div>
+                <h1>9</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b10.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Extra Petite</h4>
+                    <p>Fashion, style tips, and outfit ideas.</p>
+                    <a href="https://www.extrapetite.com/">CONTINUE READING</a>
+                </div>
+                <h1>10</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b11.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Who What Wear</h4>
+                    <p>Celebrity style and fashion trend coverage.</p>
+                    <a href="https://www.whowhatwear.com/">CONTINUE READING</a>
+                </div>
+                <h1>11</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b12.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Fashion Magazine</h4>
+                    <p>A look into the latest fashion news and industry gossip.</p>
+                    <a href="https://fashionmagazine.com/">CONTINUE READING</a>
+                </div>
+                <h1>12</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b13.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Fashionista</h4>
+                    <p>Insights into fashion news, trends and latest releases.</p>
+                    <a href="https://fashionista.com">CONTINUE READING</a>
+                </div>
+                <h1>13</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b14.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Un-Fancy</h4>
+                    <p>Mindful style accompanied by tips and advice.</p>
+                    <a href="http://www.un-fancy.com/">CONTINUE READING</a>
+                </div>
+                <h1>14</h1>
+            </div>
+            <div class="blog-box">
+                <div class="blog-img">
+                    <img src="img/blog/b15.jpg" alt="">
+                </div>
+                <div class="blog-details">
+                    <h4>Vogue.co.uk</h4>
+                    <p>Fashion, trends, latest news, catwalk photos, and designers.</p>
+                    <a href="https://www.vogue.co.uk/">CONTINUE READING</a>
+                </div>
+                <h1>15</h1>
+            </div>
+        </section>
+    
+        <section id="pagination" class="section-p1">
+            <a href="#" id="page1" class="page-link active">1</a>
+            <a href="#" id="page2" class="page-link">2</a>
+            <a href="#" id="page3" class="page-link">3</a>
+            <a href="#" id="next" class="page-link"><i class="fas fa-long-arrow-alt-right"></i></a>
+        </section>
+    </main>
+
+    <!----footer---->
+    <footer class="footer container">
+        <div class="footer__container grid">
+            <div class="footer__content">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/LOGO.png" alt="" class="footer__logo-img">
+                </a>
+                <h4 class="footer__subtitle">Contact</h4>
+                <p class="footer__description">
+                    <b>Address: </b>Sushant University, Sector-55, Gurugram, Haryana
+                </p>
+                <p class="footer__description">
+                    <b>Phone: </b>+91 123456789
+                </p>
+                <p class="footer__description">
+                    <b>Hours: </b>10:00-18:00, Mon-Sat
+                </p>
+
+                <div class="footer__social">
+                    <h4 class="footer__subtitle">Follow Us</h4>
+                    <div class="footer__social-links flex">
+                        <a href="https://www.facebook.com/">
+                            <img src="img/icon-facebook.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="https://x.com/">
+                            <img src="img/icon-twitter.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/icon-instagram.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="https://in.pinterest.com/">
+                            <img src="img/icon-pinterest.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <img src="img/icon-youtube.svg" alt="" class="footer__social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Address</h3>
+                <ul class="footer__links">
+                    <li><a href="about.html" class="footer__link">About Us</a></li>
+                    <li><a href="" class="footer__link">Delivery Information</a></li>
+                    <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="footer__link">Terms and Conditions</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+                    <li><a href="" class="footer__link">Support Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">My Account</h3>
+                <ul class="footer__links">
+                    <li><a href="login-register.html" class="footer__link">Sign In</a></li>
+                    <li><a href="cart.html" class="footer__link">View Cart</a></li>
+                    <li><a href="wishlist.html" class="footer__link">My Wishlist</a></li>
+                    <li><a href="" class="footer__link">Track my Order</a></li>
+                    <li><a href="" class="footer__link">Help</a></li>
+                    <li><a href="account.html" class="footer__link">Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Secured Payment Gateways</h3>
+
+                <img src="img/payment-method.png" alt="" class="payment__img">
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="copyright">&copy; 2024 OutfitHouse. All Rights Reserved</p>
+            <span class="designer">Designed by SyntaxSquad</span>
+        </div>
+    </footer>
+
+
+    <!---swiper js link--->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="blog.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

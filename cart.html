@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-----flaticon----->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-----swiper css----->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+    <!-----css----->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!----Header---->
+    <header class="header">
+        <div class="header__top">
+            <div class="header__container container">
+                <div class="header__contact">
+                    <span>+91 123456789</span>
+                    <span>Our location: Sector-55, Gurugram</span>
+                </div>
+                <p class="header__alert-news">
+                    Super Value Deals - Save more with coupons
+                </p>
+
+                <a href="login-register.html" class="header__top-action">
+                    Login/Sign Up
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <img src="img/LOGO.png" alt="" class="nav__logo-img">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <div class="nav__menu-top">
+                    <a href="index.html" class="nav__menu-logo">
+                        <img src="img/LOGO.png" alt="">
+                    </a>
+                    <div class="nav__close" id="nav-close">
+                        <i class="fi fi-rs-cross-small"></i>
+                    </div>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="shop.html" class="nav__link">Shop</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="account.html" class="nav__link">My Account</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="compare.html" class="nav__link">Compare</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">Blog</a>
+                    </li>
+                </ul>
+
+                <div class="header__search">
+                    <input type="text" placeholder="Search for items..." class="form__input">
+                    <button class="search__btn">
+                        <img src="img/search.png" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__user-actions">
+                <a href="wishlist.html" class="header__action-btn">
+                    <img src="img/icon-heart.svg" alt="">
+                    <span class="count">0</span>
+                </a>
+                <a href="cart.html" class="header__action-btn">
+                    <img src="img/icon-cart.svg" alt="">
+                    <span class="count" id="cartCount">0</span>
+                </a>
+                <div class="header__action-btn nav__toggle" id="nav-toggle">
+                    <img src="img/menu-burger.svg" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!----Main---->
+    <main class="main">
+        <!-----Breadcrumb--->
+        <section class="breadcrumb">
+            <ul class="breadcrumb__list flex container">
+                <li><a href="index.html" class="breadcrumb__link">Home</a></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><span class="breadcrumb__link">Shopping</span></li>
+                <li><span class="breadcrumb__link">></span></li>
+                <li><span class="breadcrumb__link">Cart</span></li>
+            </ul>
+        </section>
+
+        <!-----Cart---->
+        <section id="cart" class="cart section--lg container">
+            <div class="table__container">
+                <table class="table" width="100%">
+                    <tr>
+                        <th>Remove</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Subtotal</th>
+                    </tr>
+
+                    <tbody id="cart-items">
+                        <!-- Cart items will be dynamically generated here -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="cart__actions">
+                <a href="" class="btn flex btn--md">
+                    <i class="fi-rs-shuffle"></i> Update Cart
+                </a>
+                <a href="shop.html" class="btn flex btn--md">
+                    <i class="fi-rs-shopping-bag"></i> Continue Shopping
+                </a>
+            </div>
+
+            <div class="divider">
+                <i class="fi fi-rs-fingerprint"></i>
+            </div>
+
+            <div class="cart__group grid">
+                <div>
+                    <div class="cart__shipping">
+                        <h3 class="section__title">Calculate Shipping</h3>
+                        <form action="" class="form grid">
+                            <input type="text" placeholder="State / Country" class="form__input">
+                            <div class="form__group grid">
+                                <input type="text" placeholder="City" class="form__input">
+                                <input type="text" placeholder="PostCode / ZipCode" class="form__input">
+                            </div>
+
+                            <div class="form__btn">
+                                <button class="btn flex btn--sm">
+                                    <i class="fi-rs-shuffle"></i> Update
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="cart__coupon">
+                        <h3 class="section__title">Apply Coupon</h3>
+                        <form action="" class="coupon__form form grid">
+                            <div class="form__group grid">
+                                <input type="text" class="form__input" placeholder="Enter your Coupon">
+                                <div class="form__btn">
+                                    <button class="btn flex btn--sm">
+                                        <i class="fi-rs-label"></i> Apply
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="cart__total">
+                    <h3 class="section__title">Cart Total</h3>
+                    <table class="cart__total-table">
+                        <tr>
+                            <td>Cart Subtotal</td>
+                            <td>₹ <span id="cart-subtotal">0.00</span></td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Total</strong></td>
+                            <td><strong>₹ <span id="total">0.00</span></strong></td>
+                        </tr>
+                    </table>
+
+                    <a href="checkout.html" class="btn flex btn--md">
+                        <i class="fi fi-rs-box-alt"></i> Proceed to Checkout
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-----Newsletter---->
+        <section class="newsletter section">
+            <div class="newsletter__container container grid">
+                <h3 class="newsletter__title flex">
+                    <img src="img/icon-email.svg" alt="" class="newsletter__icon">
+                    Sign up to Newsletter
+                </h3>
+                <p class="newsletter__description">
+                    ....and recieve ₹25 coupon for first shopping.
+                </p>
+
+                <form action="" class="newsletter__form">
+                    <input type="text" placeholder="Enter your Email" class="newsletter__input">
+                    <button type="submit" class="newsletter__btn">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!----footer---->
+    <footer class="footer container">
+        <div class="footer__container grid">
+            <div class="footer__content">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/LOGO.png" alt="" class="footer__logo-img">
+                </a>
+                <h4 class="footer__subtitle">Contact</h4>
+                <p class="footer__description">
+                    <b>Address: </b>Sushant University, Sector-55, Gurugram, Haryana
+                </p>
+                <p class="footer__description">
+                    <b>Phone: </b>+91 123456789
+                </p>
+                <p class="footer__description">
+                    <b>Hours: </b>10:00-18:00, Mon-Sat
+                </p>
+
+                <div class="footer__social">
+                    <h4 class="footer__subtitle">Follow Us</h4>
+                    <div class="footer__social-links flex">
+                        <a href="https://www.facebook.com/">
+                            <img src="img/icon-facebook.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="https://x.com/">
+                            <img src="img/icon-twitter.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="img/icon-instagram.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="https://in.pinterest.com/">
+                            <img src="img/icon-pinterest.svg" alt="" class="footer__social-icon">
+                        </a>
+                        <a href="https://www.youtube.com/">
+                            <img src="img/icon-youtube.svg" alt="" class="footer__social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Address</h3>
+                <ul class="footer__links">
+                    <li><a href="about.html" class="footer__link">About Us</a></li>
+                    <li><a href="" class="footer__link">Delivery Information</a></li>
+                    <li><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="footer__link">Terms and Conditions</a></li>
+                    <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+                    <li><a href="" class="footer__link">Support Center</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">My Account</h3>
+                <ul class="footer__links">
+                    <li><a href="login-register.html" class="footer__link">Sign In</a></li>
+                    <li><a href="cart.html" class="footer__link">View Cart</a></li>
+                    <li><a href="wishlist.html" class="footer__link">My Wishlist</a></li>
+                    <li><a href="" class="footer__link">Track my Order</a></li>
+                    <li><a href="" class="footer__link">Help</a></li>
+                    <li><a href="account.html" class="footer__link">Order</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Secured Payment Gateways</h3>
+
+                <img src="img/payment-method.png" alt="" class="payment__img">
+            </div>
+        </div>
+
+        <div class="footer__bottom">
+            <p class="copyright">&copy; 2024 OutfitHouse. All Rights Reserved</p>
+            <span class="designer">Designed by SyntaxSquad</span>
+        </div>
+    </footer>
+
+    <!---swiper js link--->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
